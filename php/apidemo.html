@@ -1,0 +1,59 @@
+<html>
+<head></head>
+<body>
+<h1> API Demo Page </h1>
+
+<b>Login </b> <br><hr>
+<form method="POST" action="api.php">
+    <table cellspacing="5" cellpadding="5">
+            <input type="hidden" name="op" value="login"/></td>
+        <tr>
+            <td> Username </td>
+            <td><input type = "text" name = "username" /></td>
+        </tr>
+        <tr>
+            <td> Password </td>
+            <td><input type="password" name="password" /></td>
+        </tr>
+        <tr colspan = "2">
+            <th><input type="submit" value= "Login"  /></th>
+        </tr>
+    </table>
+</form>
+
+<br><br>
+
+
+<b>Register User</b> <br /><hr />
+<form method="POST" action="api.php">
+    <table cellspacing="5" cellpadding="5">
+            <input type="hidden" name="op" value="register"/></td>
+        <tr>
+            <td> Username </td>
+            <td><input type = "text" name = "username" /></td>
+        </tr>
+        <tr>
+            <td> password</td>
+            <td><input type = "password" name = "password" /></td>
+        </tr>
+        <tr>
+            <td> Email</td>
+            <td><input type="text" name="email" /></td>
+        </tr>
+		<tr>
+            <td> Date of Birth</td>
+            <td><input type="date" name="dob" /></td>
+        </tr>
+		<tr>
+            <td> Gender</td>
+            <td><input type="radio" name="gender" value="male" checked> Male</td>
+  			<td><input type="radio" name="gender" value="female"> Female</td>
+        </tr>
+        <tr colspan = "2">
+            <th><input type="submit" value= "Register"  /></th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+
